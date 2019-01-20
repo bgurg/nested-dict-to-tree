@@ -1,0 +1,50 @@
+***keys only***
+___users
+   |___id
+   |___name
+   |   |___first
+   |   |___last
+   |___id
+   |___name
+   |   |___first
+   |   |___last
+   |___id
+   |___name
+   |   |___first
+   |   |___last
+   |___id
+   |___listkey
+   |___id
+   |___name
+   |   |___first
+   |   |___last
+___Happy dance
+   |___Snoopy
+   |___Linus
+
+***keys and values***
+___users : 
+   |___id : 1
+   |___name : 
+   |   |___first : John
+   |   |___last : Doe
+   |___id : 2
+   |___name : 
+   |   |___first : Ralph
+   |   |___last : Smith
+   |___id : 3
+   |___name : 
+   |   |___first : Bob
+   |   |___last : Harris
+   |___id : 4
+   |___listkey : 
+   |       listval1
+   |       listval2
+   |       listval3
+   |___id : 5
+   |___name : 
+   |   |___first : Charlie
+   |   |___last : Brown
+___Happy dance : 
+   |___Snoopy : Peanuts
+   |___Linus : Peanuts

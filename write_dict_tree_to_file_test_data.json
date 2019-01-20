@@ -1,0 +1,40 @@
+{
+  "users":[
+    {
+      "id":1,
+      "name":{
+        "first":"John",
+        "last":"Doe"
+      }
+    },
+    {
+      "id":2,
+      "name":{
+        "first":"Ralph",
+        "last":"Smith"
+      }
+    },
+    {
+      "id":3,
+      "name":{
+        "first":"Bob",
+        "last":"Harris"
+      }
+    },
+    {
+      "id":4,
+      "listkey":["listval1","listval2","listval3"]
+    },
+    {
+      "id":5,
+      "name":{
+        "first":"Charlie",
+        "last":"Brown"
+      }
+    }
+  ],
+  "Happy dance":{
+    "Snoopy" : "Peanuts",
+    "Linus" : "Peanuts"
+  }
+}
