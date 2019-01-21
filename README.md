@@ -1,2 +1,3 @@
 # write_dict_tree_to_file
-connvert a nested dictionary to a tree visual representation and write to file
+- Parses a nested dictionary and writes a tree visual representation file
+- Written to help review project metadata that was being stored in a json file
