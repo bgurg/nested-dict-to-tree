@@ -12,20 +12,27 @@ def write_dict_tree_to_file(f, data, show_values=True, level=0):
   '''
   if type(data) == list:
       for item in data:
-          if type(item) in {list, dict}:
-              write_dict_tree_to_file(f, item, show_values, level)
+          if type(item) in [list, dict]:
+              write_dict_tree_to_file(f = f, 
+                                      data = item, 
+                                      show_values=show_values, 
+                                      level = level)
           elif show_values:
               f.write('\n' + '   |'*(level-1) + '    ' + '   ' + str(item))
+              
 
   elif type(data) == dict:
       for k,v in data.items():
           f.write('\n' + '   |'*level + '___' + k)            
-          if type(v) in {list, dict}:
+          if type(v) in [list, dict]:
               if show_values: 
                   f.write(' : ')
-              write_dict_tree_to_file(f, v, show_values, level+1)                
+              write_dict_tree_to_file(f = f, 
+                                      data = v, 
+                                      show_values = show_values, 
+                                      level = level + 1)                
           elif show_values:
                   f.write(' : ' + str(v)) 
             
 if __name__ == "__main__":
-  print('Function: write_dict_tree_to_file')
+  print('***support file*** write_dict_tree_to_file function')

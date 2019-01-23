@@ -6,12 +6,17 @@ outfile = 'write_dict_tree_to_file_output.txt'
 
 if __name__ == "__main__":
     with open(infile,'r') as f:
-        tags_dict = load(f)
+        content = load(f)
     print(f'.../{infile} read')
 
     with open(outfile,'w') as f:
         f.write('***keys only***')
-        write_dict_tree_to_file(f, tags_dict, False)
+        write_dict_tree_to_file(f = f, 
+                                data = content, 
+                                show_values = False)
+
         f.write('\n\n***keys and values***')
-        write_dict_tree_to_file(f, tags_dict)
+        write_dict_tree_to_file(f = f, 
+                                data = content)
+
     print(f'.../{outfile} written')
